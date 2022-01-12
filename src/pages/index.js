@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../components/Contact';
 import Download from '../components/Download';
 import Faq from '../components/Faq';
 import Features from '../components/Features';
@@ -10,11 +11,14 @@ const index = () => {
   return (
     <div>
       <Hero />
-      <Features />
-      <Section />
-      <Section2 />
+      <div className='bg-bookmark-white '>
+        <Features />
+        <Section />
+        <Section2 />
+      </div>
       <Download />
       <Faq />
+      <Contact />
     </div>
   );
 };

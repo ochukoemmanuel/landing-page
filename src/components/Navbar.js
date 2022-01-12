@@ -17,13 +17,13 @@ const Navbar = ({ toggle }) => {
         <Link className='cursor-pointer' to='/'>
           Home
         </Link>
-        <Link className='cursor-pointer' to='/menu'>
+        <Link className='cursor-pointer' to='#'>
           Menu
         </Link>
-        <Link className='cursor-pointer' to='/about'>
+        <Link className='cursor-pointer' to='#'>
           About
         </Link>
-        <Link className='cursor-pointer' to='/contact'>
+        <Link className='cursor-pointer' to='#'>
           Contact
         </Link>
         <button
