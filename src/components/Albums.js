@@ -78,7 +78,7 @@ const Albums = () => {
               >
                 <img
                   key={i}
-                  className='w-44 md:w-52 mx-6'
+                  className='img md:w-52 mx-6'
                   src={img.album}
                   alt=''
                 />
