@@ -5,13 +5,6 @@ const Section = () => {
   return (
     <div className='relative mt-20 lg:mt-54'>
       <div className='container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24'>
-        <div className='flex flex-1 justify-center z-10 mb-10 lg:mb-0'>
-          <img
-            className='w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full'
-            src={Tab}
-            alt=''
-          />
-        </div>
         <div className='flex flex-1 flex-col items-center lg:items-start'>
           <h1 className='text-3xl text-bookmark-blue'>Intelligent search</h1>
           <p className='text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full'>

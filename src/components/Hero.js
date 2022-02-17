@@ -1,45 +1,51 @@
 import React from 'react';
-import hero from '../images/hero-bg.png';
+import img1 from '../images/img1.jpg';
+import img2 from '../images/img2.jpg';
+import img3 from '../images/img3.jpg';
+import img4 from '../images/img4.jpg';
+import img5 from '../images/img5.jpg';
 
 const Hero = () => {
   return (
     //Hero
-    <section className='relative'>
-      <div className='container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28'>
-        <div className='flex flex-1 flex-col items-center lg:items-start'>
-          <h2 className='text-bookmark-blue text-3xl md:text-4 tetx-center lg:text-left mb-6'>
-            A Simple Bookmark Manager
-          </h2>
-          <p className='text-bookmark-grey text-lg text-center lg:text-left mb-6'>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </p>
-          <div className='flex justify-center flex-wrap gap-6'>
-            <button
-              type='button'
-              class='btn btn-purple hover:bg-white hover:text-black'
-            >
-              Get it on Chrome
-            </button>
-            <button
-              type='button'
-              class='btn btn-white hover:bg-bookmark-purple hover:text-white'
-            >
-              Get it on Firefox
-            </button>
-          </div>
+    <div className='md:container flex justify-center flex-col md:flex-row lg:flex-row items-center gap-5 mt-6 lg:mt-9 bg-blog-black text-white py-9'>
+      <div className='flex items-center -space-x-3'>
+        <div
+          style={{ backgroundImage: `url(${img1})` }}
+          className='w-14 h-14 md:w-24 md:h-24 overflow-hidden rounded-full bg-center bg-no-repeat bg-cover cursor-pointer'
+        >
+          {/* <img src={img1} className='w-72' alt='img' /> */}
         </div>
-        <div className='flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10'>
+        <div className='z-10 w-16 h-16 md:w-28 md:h-28 overflow-hidden rounded-full bg-center bg-no-repeat bg-cover cursor-pointer'>
+          <img src={img2} className='w-72' alt='img' />
+        </div>
+        <div className='z-20 w-20 h-20 md:w-32 md:h-32 overflow-hidden rounded-full bg-center bg-no-repeat bg-cover cursor-pointer'>
+          <img src={img3} className='w-72' alt='img' />
+        </div>
+        <div className='z-10 w-16 h-16 md:w-28 md:h-28 overflow-hidden rounded-full bg-center bg-no-repeat bg-cover cursor-pointer'>
+          <img src={img4} className='w-72' alt='img' />
+        </div>
+        <div className='w-14 h-14 md:w-24 md:h-24 overflow-hidden rounded-full bg-center bg-no-repeat bg-cover cursor-pointer'>
+          <img src={img5} className='w-72' alt='img' />
+        </div>
+      </div>
+
+      <div className='flex flex-col items-center text-left'>
+        <h2 className='text-3xl font-bold md:text-4 text-center lg:text-left mb-3'>
+          Top music artist for you
+        </h2>
+        <p className='text-bookmark-grey text-lg text-center lg:text-left mb-6'>
+          We will create an experience just for you
+        </p>
+      </div>
+      {/* <div className='flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10'>
           <img
             className='w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full'
             src={hero}
             alt='hero'
           />
-        </div>
-      </div>
-      <div className='hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 -bottom-6'></div>
-    </section>
+        </div> */}
+    </div>
   );
 };
 

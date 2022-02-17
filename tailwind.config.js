@@ -5,10 +5,13 @@ module.exports = {
     extend: {
       colors: {
         'bookmark-purple': '#5267DF',
-        'bookmark-red': '#FA5959',
+        'blog-red': '#F52B4F',
         'bookmark-blue': '#242A45',
         'bookmark-grey': '#9194A2',
-        'bookmark-white': '#F7F7F7',
+        'blog-darkgrey': '#E5E5E5',
+        'blog-lightgrey': '#CFCFCF',
+        'blog-black': '#1D2025',
+        'bookmark-white': '#FFFFFF',
       },
     },
     fontFamily: {
@@ -16,10 +19,9 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '1rem',
       screens: {
         lg: '1124px',
-        xl: '1124px',
+        xl: '1200px',
         '2xl': '1124px',
       },
     },

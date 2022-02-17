@@ -39,3 +39,12 @@ code {
 .center-content {
   @apply flex flex-col justify-center items-center;
 }
+
+.grad {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255, 0.8),
+    rgb(255, 255, 255, 1)
+  );
+}
